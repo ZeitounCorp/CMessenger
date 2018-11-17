@@ -1,0 +1,26 @@
+<h1 class="text-warning" style="font-size: 26px !important;" mat-dialog-title>Ajouter un Ami</h1>
+<mat-dialog-content class="mat-typography">
+  <app-searchbar (onSelectedOption)="onSelectedFilter($event)"></app-searchbar>
+  <div *ngFor="let user of filteredPostsList" class="row">
+    <div class="col-12">
+      <div class="card">
+        <h3 class="card-header"><b>Username: </b>{{user.Info.username}}</h3>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <img class="btnAdd" [src]="user.Image.located" alt="Profile Image">
+            </div>
+            <div class="col-6">
+              <h5 class="card-title"><b>De: </b>{{user.Info.city}}, {{user.Info.country}}</h5>
+              <p class="card-text"><b>Age: </b> {{user.Info.age}}</p>
+              <a href="#" class="btn btn-primary" (click)="addFriend(user)">Ajouter en Ami</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button class="myBtn btn-warning" mat-button [mat-dialog-close]="true" cdkFocusInitial>Fermer</button>
+</mat-dialog-actions>

@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-12 card border-warning text-center">
+    <div class="row">
+      <div class="col-12 card-header border-warning">
+        <ul class="nav nav-pills card-header-pills">
+          <li class="nav-item">
+            <a class="nav-link active bg-danger" (click)="log()">S'identifier</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white bg-info" (click)="sign()">S'enregistrer</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Bienvenue Sur C-Messenger</h5>
+      <p class="card-text">Identifiez vous ou Enregistrez vous !</p>
+      <div *ngIf="signup">
+        <app-sign-up></app-sign-up>
+      </div>
+      <div *ngIf="login">
+        <app-login></app-login>
+      </div>
+    </div>
+  </div>
+</div>
