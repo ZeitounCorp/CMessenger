@@ -17,6 +17,7 @@ import { AddFriendComponent } from './add-friend/add-friend.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 
 import {
   MatIconModule,
@@ -51,6 +52,7 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
     MatInputModule,
     MatAutocompleteModule,
     MatChipsModule,
+    MatMenuModule,
     MatFormFieldModule,
     FormsModule,
     AppRoutingModule,
