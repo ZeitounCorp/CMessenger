@@ -1,7 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
 import * as firebase from 'firebase';
-import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-import { snapshotToArray } from '../add-friend/add-friend.component';
+import {
+  MatDialog,
+  MatDialogRef,
+  MAT_DIALOG_DATA
+} from '@angular/material';
+import {
+  snapshotToArray
+} from '../add-friend/add-friend.component';
 
 @Component({
   selector: 'app-contacts',
@@ -18,7 +27,7 @@ export class ContactsComponent implements OnInit {
   key;
   loading = false;
 
-  constructor(public dialogRef: MatDialogRef<ContactsComponent>) {
+  constructor(public dialogRef: MatDialogRef < ContactsComponent > ) {
     this.ref.on('value', resp => {
       this.Users = [];
       this.Users = snapshotToArray(resp);
@@ -31,10 +40,9 @@ export class ContactsComponent implements OnInit {
         }
       });
     });
-   }
-
-  ngOnInit() {
   }
+
+  ngOnInit() {}
 
   loadFriends() {
     firebase.database().ref('Users/' + this.CUser.Keys.key + '/Friends').child('myFriends').on('value', resp => {
@@ -46,5 +54,7 @@ export class ContactsComponent implements OnInit {
   close() {
     this.dialogRef.close();
   }
-
+  f1() {
+    console.log("Hello World !");
+  }
 }
