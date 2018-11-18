@@ -4,11 +4,12 @@
 
 
 #contactName {
-  margin-bottom: -10px;
+  margin-bottom: -5px;
 }
 
 #lastSeen {
   margin-left: 5px;
+  
 }
 
 #contactImage {
@@ -26,4 +27,10 @@
 }
 .example-spacer {
   flex: 1 1 auto;
+}
+
+#newDiscussion {
+  padding-right: 10px;
+  padding-top: 10px;
+  color: rgb(72, 66, 183)
 }
