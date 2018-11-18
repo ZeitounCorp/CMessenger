@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 import { ContactsComponent } from '../contacts/contacts.component';
 import { SettingsComponent } from '../settings/settings.component';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-menu',
@@ -28,6 +29,10 @@ export class MenuComponent implements OnInit {
       height: '400px',
       width: '600px',
     });
+  }
+
+  loggout() {
+    firebase.auth().signOut();
   }
 
 }
