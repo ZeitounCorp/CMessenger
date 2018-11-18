@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import {
   MatIconModule,
@@ -27,6 +28,8 @@ import {
   MatFormFieldModule
 } from '@angular/material';
 import { SearchbarComponent } from './searchbar/searchbar.component';
+import { LoadingComponent } from './ui/loading/loading.component';
+import { ConversationsComponent } from './conversations/conversations.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,9 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
     ModalLogComponent,
     SettingsComponent,
     AddFriendComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    LoadingComponent,
+    ConversationsComponent
   ],
   imports: [
     BrowserModule,
@@ -54,13 +59,16 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
     MatChipsModule,
     MatMenuModule,
     MatFormFieldModule,
+    MatToolbarModule,
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule
 
   ],
   entryComponents: [
-    AddFriendComponent
+    AddFriendComponent,
+    SettingsComponent,
+    ContactsComponent
   ],
   providers: [
     DataService

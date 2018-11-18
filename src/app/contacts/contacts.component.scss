@@ -1,12 +1,10 @@
 #detailsContact {
-  
   padding-top: 3px;
 }
 
 
 #contactName {
   margin-bottom: -10px;
-  margin-top: 5px;
 }
 
 #lastSeen {
@@ -14,6 +12,18 @@
 }
 
 #contactImage {
-  height: 54px;
-  width: 54px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.contact {
+  margin-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+.example-icon {
+  padding: 0 14 15px;
+}
+.example-spacer {
+  flex: 1 1 auto;
 }

@@ -18,8 +18,8 @@ export class MenuComponent implements OnInit {
 
   openContacts() {
     const dialogRef = this.dialog.open(ContactsComponent, {
-      height: '400px',
-      width: '600px',
+      height: '600px',
+      width: '400px',
     });
   }
 

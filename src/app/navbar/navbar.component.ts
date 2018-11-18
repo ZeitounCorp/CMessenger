@@ -16,8 +16,8 @@ export class NavbarComponent implements OnInit {
 
   openModal() {
     const dialogRef = this.dialog.open(AddFriendComponent, {
-      height: '400px',
-      width: '600px',
+      height: '600px',
+      width: '400px',
     });
   }
 

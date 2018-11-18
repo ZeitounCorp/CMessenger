@@ -1,4 +1,8 @@
-<h1 class="text-warning" style="font-size: 26px !important;" mat-dialog-title>Ajouter un Ami</h1>
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <span style="font-size: 26px !important; color: white;">Ajouter un Ami</span>
+  </mat-toolbar-row>
+</mat-toolbar>
 <mat-dialog-content class="mat-typography">
   <app-searchbar (onSelectedOption)="onSelectedFilter($event)"></app-searchbar>
   <div *ngFor="let user of filteredPostsList" class="row">
@@ -22,5 +26,5 @@
   </div>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <button class="myBtn btn-warning" mat-button [mat-dialog-close]="true" cdkFocusInitial>Fermer</button>
+  <button class="myBtn btn-warning" mat-button [mat-dialog-close]="true" >Fermer</button>
 </mat-dialog-actions>
