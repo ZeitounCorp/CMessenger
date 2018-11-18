@@ -1269,8 +1269,8 @@ export class SignUpComponent implements OnInit {
       },
     },
     Friends: {
-      myFriends: [''],
-      myFavorites: [''],
+      myFriends: [],
+      myFavorites: [],
 
     },
     Keys: {
