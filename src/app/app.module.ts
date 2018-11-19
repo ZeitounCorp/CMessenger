@@ -30,6 +30,7 @@ import {
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { LoadingComponent } from './ui/loading/loading.component';
 import { ConversationsComponent } from './conversations/conversations.component';
+import { PrivateConvComponent } from './private-conv/private-conv.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ConversationsComponent } from './conversations/conversations.component'
     AddFriendComponent,
     SearchbarComponent,
     LoadingComponent,
-    ConversationsComponent
+    ConversationsComponent,
+    PrivateConvComponent
   ],
   imports: [
     BrowserModule,
