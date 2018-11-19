@@ -1,3 +1,4 @@
+import { DataService } from './../data.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatComponent implements OnInit {
 
-  constructor() { }
+  convSelected = false;
+
+  constructor(public service: DataService) {
+    this.convSelected = this.service.convSelected;
+    this.getConv();
+  }
 
   ngOnInit() {
+  }
+
+  getConv() {
+      setInterval(() => {
+        this.convSelected = this.service.convSelected;
+    }, 1);
   }
 
 }

@@ -1,3 +1,15 @@
-<p>
-  conversations works!
-</p>
+<div class="row">
+  <div class="col-12" *ngIf="!loading">
+    <app-loading></app-loading>
+  </div>
+  <div style="padding-left: 24px !important; padding-right: 24px !important; padding-top: 15px !important;" (click)="log()" class="row contact"
+    *ngFor="let chat of Convs">
+    <div class="col-4 img">
+      <img [src]="chat.image" alt="" id="contactImage">
+    </div>
+    <div class="col-8" id="detailsContact">
+      <h5 id="contactName">{{chat.chatroom}}</h5>
+      <span style="font-size: 12px; color: grey;" id="lastSeen">{{chat.created | date:'dd/MM/yyyy à
+        HH:mm'}}</span>
+    </div>
+  </div>

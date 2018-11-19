@@ -1,6 +1,10 @@
-<div class="row">
-<app-conversations class="col-3 contactsDisplay"></app-conversations>
+<div class="row" *ngIf="!convSelected">
+  <app-conversations class="col-3 contactsDisplay"></app-conversations>
   <div class="col-9 messageDisplay">
     <img src="../assets/emptyConversation.png" class="rounded mx-auto d-block empty" alt="empty conversation">
   </div>
+</div>
+<div class="row" *ngIf="convSelected">
+  <app-conversations class="col-3 contactsDisplay"></app-conversations>
+  <app-private-conv class="col-9 messageDisplay"></app-private-conv>
 </div>

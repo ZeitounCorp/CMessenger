@@ -54,7 +54,16 @@ export class ContactsComponent implements OnInit {
   close() {
     this.dialogRef.close();
   }
-  f1() {
-    console.log("Hello World !");
+  create_Conv(username, picture, key) {
+    // tslint:disable-next-line:prefer-const
+    let newData = firebase.database().ref(`Users/${this.CUser.Keys.key}/Conversations`);
+    newData.push({
+      chatroom: username,
+      image: picture,
+      messages: [''],
+      friendKey: key,
+      created: Date()
+    });
+    this.dialogRef.close();
   }
 }
