@@ -31,6 +31,7 @@ import { SearchbarComponent } from './searchbar/searchbar.component';
 import { LoadingComponent } from './ui/loading/loading.component';
 import { ConversationsComponent } from './conversations/conversations.component';
 import { PrivateConvComponent } from './private-conv/private-conv.component';
+import { AddChatComponent } from './add-chat/add-chat.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { PrivateConvComponent } from './private-conv/private-conv.component';
     SearchbarComponent,
     LoadingComponent,
     ConversationsComponent,
-    PrivateConvComponent
+    PrivateConvComponent,
+    AddChatComponent
   ],
   imports: [
     BrowserModule,
