@@ -72,6 +72,7 @@ import { AddChatComponent } from './add-chat/add-chat.component';
   entryComponents: [
     AddFriendComponent,
     SettingsComponent,
+    AddChatComponent,
     ContactsComponent
   ],
   providers: [
