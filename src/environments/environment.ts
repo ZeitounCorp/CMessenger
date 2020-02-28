@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyCM6YkSbDdDLkXphPog-Ly8t_flwjHF_cs',
-    authDomain: 'c-messenger-eb05c.firebaseapp.com',
-    databaseURL: 'https://c-messenger-eb05c.firebaseio.com',
-    projectId: 'c-messenger-eb05c',
-    storageBucket: 'c-messenger-eb05c.appspot.com',
-    messagingSenderId: '662632072152'
+    apiKey: 'YOUR_API_KEY',
+    authDomain: 'YOUR_AUTH_DOMAIN',
+    databaseURL: 'YOUR_DATABASE_URL',
+    projectId: 'YOUR_PROJECT_ID',
+    storageBucket: 'YOUR_STORAGE_BUCKET',
+    messagingSenderId: 'YOUR_MESSAGING_SENDER_ID'
   }
 };
 
